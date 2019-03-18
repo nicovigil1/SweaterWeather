@@ -5,6 +5,7 @@ var dailyWeather = document.querySelector(".daily-weather")
 searchBox.addEventListener('keypress', function(key) {
   if (key.keyCode === 13 && searchBox.value != "") {
     place = searchBox.value
+    resetWeatherHeader()
     getWeather(searchBox.value)
   } 
 })
@@ -95,6 +96,9 @@ function moveSearchBox() {
   }
 }
 
+function resetWeatherHeader() {
+  document.querySelector("#weather-header").innerHTML =  "Current Weather"
+}
 // bad code? - written then abandoned - saved for review 
 
 // api authorization 
