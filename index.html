@@ -9,9 +9,21 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="search-box">
+      <div class="search-box">
       <input id="search-input" type="text" placeholder="Enter city, state">
-      <!-- <input type="submit" onclick="hideSearchBox()"> -->
+      <!-- <input type="submit" onclick="getBackground()"> -->
+    </div>
+    <div class="current-weather">
+      <div>
+        <h3 id="weather-header">
+          Current Weather
+          <div id="star">☆</div>
+        </h3>
+      </div>
+      <div class="current-forecast"></div>
+    </div>
+    <div class="daily-weather">
+      <h3 id="seven-day-label">7 Day Forecast</h3>
     </div>
   </div>
   <script src="scripts.js"></script>
